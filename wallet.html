@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Tournament App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Wallet Balance</h2>
+        <div id="walletDetails">
+            <p>Balance: <span id="walletBalance">₹0</span></p>
+            <button id="addMoneyBtn">Add Money</button>
+            <button id="showDetailsBtn">Show Playing Details</button>
+            <div id="playingDetails" style="display:none;"></div>
+        </div>
+        <div id="paymentSection" style="display:none;">
+            <h3>Add Money via UPI</h3>
+            <p>Send to UPI ID: <b>9454881411@fam</b></p>
+            <img src="C:/Users/LENOVO/Downloads/WhatsApp Image 2026-01-22 at 6.09.38 PM.jpeg" alt="UPI QR Code" style="max-width:200px;display:block;margin:10px auto;" />
+            <p>Scan the QR code above to pay.</p>
+            <input type="number" id="addAmount" placeholder="Enter amount" min="1">
+            <button id="confirmAddBtn">Confirm Add</button>
+            <p style="font-size:0.9em;color:#ccc;">After payment, enter the amount and click Confirm Add to update your wallet balance.</p>
+        </div>
+        <button id="secretAddBtn" style="display:none;">Secret Add Money (Admin)</button>
+        <p>Coin Balance: <span id="coinBalance">0 Coins</span></p>
+        <div id="walletMsg"></div>
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

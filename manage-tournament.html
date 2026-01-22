@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Tournament - Tournament App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Manage Tournament - BR Map</h2>
+        <p>Each day, 5 matches. Each match: 48 slots, ₹100 entry, Winner: ₹1000, Highest Kill: ₹250.</p>
+        <div style="background:#222;padding:10px;border-radius:8px;margin-bottom:15px;color:#ffb347;">
+            <b>Fair Play Policy:</b><br>
+            <ul style="margin:8px 0 0 18px;">
+                <li>No hackers or cheating tools are allowed.</li>
+                <li>Only fair play is permitted. Any suspicious activity will result in disqualification and ban.</li>
+                <li>Play honestly and respect all participants.</li>
+            </ul>
+        </div>
+        <h2>CS MAP Matches</h2>
+        <p>5 matches daily. First 3: 8 slots, ₹100/player, Winner: ₹400, Highest Team Kill: ₹100.<br>Last 2: 8 slots, ₹200/player, Winner: ₹600, Highest Team Kill: ₹150.</p>
+        <button id="showAllPlayersBtn" style="margin-bottom:10px;">Show All Players & Teams</button>
+        <div id="allPlayersList" style="background:#181818;padding:10px;border-radius:8px;margin-bottom:15px;display:none;"></div>
+        <div id="csMatches"></div>
+        <h2>BR MAP Matches</h2>
+        <div id="brMatches"></div>
+        <div id="tournamentMsg"></div>
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
